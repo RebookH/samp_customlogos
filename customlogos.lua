@@ -1,6 +1,6 @@
 script_name("Custom Logos")
 script_authors("hijuce", "mark)")
-script_version("0.1")
+script_version("0.1t1")
 
 function main()
 	autoupdate("http://f0457898.xsph.ru/autoupdate.json", '['..string.upper(thisScript().name)..']: ', "https://www.blast.hk/threads/60462/")
