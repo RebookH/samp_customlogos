@@ -1,6 +1,6 @@
 script_name("Custom Logos")
 script_authors("hijuce", "mark)")
-script_version("0.2b")
+script_version("0.3")
 
 local encoding = require 'encoding'
 encoding.default = 'CP1251'
@@ -27,7 +27,7 @@ function main()
 	    sampRegisterChatCommand("logos", ScriptInfo)
 	    sampAddChatMessage("{CC8C51}[Custom Logos] {d5dedd}Скрипт активирован. Автор: {CC8C51}hijuce.", 0x01A0E9)
 			LoadImage()
-			local posX = userscreenX - 285
+			local posX = userscreenX - 290
 			local posY = (userscreenY - userscreenY) + 1
 	    while true do
 					wait(0)
@@ -37,7 +37,7 @@ function main()
 							sampTextdrawDelete(536)
 							sampTextdrawDelete(537)
 							sampTextdrawDelete(538)
-							renderDrawTexture(logo1, posX, posY, 280, 85, 0, 0xFFFFFFFF)
+							renderDrawTexture(logo1, posX, posY, 360, 105, 0, 0xFFFFFFFF)
 						end
 						if ipserv == '185.169.134.4:7777' then
 							sampTextdrawDelete(536)
@@ -140,7 +140,7 @@ function main()
 end
 
 function ScriptInfo()
-	sampShowDialog(1999, "{CC8C51}[Custom Logos] {ffffff}> Информация", "{CC8C51}Custom Logos {FFFFFF}- это LUA скрипт на собственные логотипы для популярных серверов\n\n\tВерсия скрипта: {629eee}0.2b{FFFFFF}\n\nНа данный момент нарисованы логотипы для таких серверов, как\n\n\t{ffffff}> {CC8C51}Arizona \n\t\t{549f68}Phoenix\n\t\tSaint-Rose\n\t\tTucson\n\t\tScottdale\n\t\tChandler\n\t\tBrainburg\n\t\tMesa\n\t\tRed-Rock\n\t\tYuma\n\t\tSurprice\n\t\tPrescott\n\t\tGlendale\n\t\tKingman\n","Закрыть")
+	sampShowDialog(1999, "{CC8C51}[Custom Logos] {ffffff}> Информация", "{CC8C51}Custom Logos {FFFFFF}- это LUA скрипт на собственные логотипы для популярных серверов\n\n\tВерсия скрипта: {629eee}0.3{FFFFFF}\n\nНа данный момент нарисованы логотипы для таких серверов, как\n\n\t{ffffff}> {CC8C51}Arizona \n\t\t{549f68}Phoenix\n\t\tSaint-Rose\n\t\tTucson\n\t\tScottdale\n\t\tChandler\n\t\tBrainburg\n\t\tMesa\n\t\tRed-Rock\n\t\tYuma\n\t\tSurprice\n\t\tPrescott\n\t\tGlendale\n\t\tKingman\n","Закрыть")
 end
 
 function autoupdate(json_url, prefix, url)
@@ -211,6 +211,7 @@ end
 
 function LoadImage()
 			sampAddChatMessage("{CC8C51}[Custom Logos] {d5dedd}Загрузка логотипов...", 0x01A0E9)
+			createDirectory("moonloader/img")
 			local urlphoenix = 'https://raw.githubusercontent.com/RebookH/samp_customlogos/master/phoenix.png'
       local phoenix_path = getWorkingDirectory() .. '/img/phoenix.png'
 			if not doesFileExist(phoenix_path) then
@@ -286,10 +287,10 @@ function LoadImage()
 			end
 
 
-			local urlgrendale = 'https://raw.githubusercontent.com/RebookH/samp_customlogos/master/grendale.png'
-			local grendale_path = getWorkingDirectory() .. '/img/grendale.png'
-			if not doesFileExist(grendale_path) then
-				download_id = downloadUrlToFile(urlgrendale, grendale_path, download_handler)
+			local urlglendale = 'https://raw.githubusercontent.com/RebookH/samp_customlogos/master/glendale.png'
+			local glendale_path = getWorkingDirectory() .. '/img/glendale.png'
+			if not doesFileExist(glendale_path) then
+				download_id = downloadUrlToFile(urlglendale, glendale_path, download_handler)
 			end
 
 
