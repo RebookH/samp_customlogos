@@ -1,6 +1,6 @@
 script_name("Custom Logos")
 script_authors("hijuce", "mark)")
-script_version("0.1t1")
+script_version("0.1.2")
 
 local encoding = require 'encoding'
 encoding.default = 'CP1251'
@@ -23,7 +23,7 @@ function main()
 			local logo12 = renderLoadTextureFromFile('moonloader/img/logo_12.png')
 			local logo13 = renderLoadTextureFromFile('moonloader/img/logo_13.png')
 	    sampRegisterChatCommand("logos", ScriptInfo)
-	    sampAddChatMessage("{CC8C51}[Custom Logos] {d5dedd}Скрипт активирован. Автор: {CC8C51}hijuce.", 0x01A0E9)
+	    sampAddChatMessage("{CC8C51}[Custom Logos] {d5dedd}Г‘ГЄГ°ГЁГЇГІ Г ГЄГІГЁГўГЁГ°Г®ГўГ Г­. ГЂГўГІГ®Г°: {CC8C51}hijuce.", 0x01A0E9)
 			local posX = userscreenX - 285
 			local posY = (userscreenY - userscreenY) + 1
 	    while true do
@@ -137,12 +137,12 @@ function main()
 end
 
 function ScriptInfo()
-	sampShowDialog(1999, "{CC8C51}[Custom Logos] {ffffff}> Информация", "{CC8C51}Custom Logos {FFFFFF}- это LUA скрипт на собственные логотипы для популярных серверов\nНа данный момент нарисованы логотипы для таких серверов, как\n\n\t{ffffff}> {CC8C51}Arizona \n\t\t{549f68}Phoenix\n\t\tSaint-Rose\n\n{FFFFFF}В обновлении будут {CC8C51}добавлены{FFFFFF} логотипы для этих серверов\n\t{ffffff}> {CC8C51}Arizona{83ebe7}\n\t\tTucson\n\t\tScottdale\n\t\tChandler\n\t\tBrainburg\n\t\tMesa\n\t\tRed-Rock\n\t\tYuma\n\t\tSurprice\n\t\tPrescott\n\t\tGlendale\n\t\tKingman\n\n\t{ffffff}> {CC8C51}Diamond\n\t\t{932051}Emerald\n\t\t{932051}Crystal\n\t\t{932051}Amber\n\t\t{932051}Gold\n\t\t{932051}Trilliant\n\t\t{932051}Sapphire\n\t\t{932051}Ruby","Закрыть")
+	sampShowDialog(1999, "{CC8C51}[Custom Logos] {ffffff}> Г€Г­ГґГ®Г°Г¬Г Г¶ГЁГї", "{CC8C51}Custom Logos {FFFFFF}- ГЅГІГ® LUA Г±ГЄГ°ГЁГЇГІ Г­Г  Г±Г®ГЎГ±ГІГўГҐГ­Г­Г»ГҐ Г«Г®ГЈГ®ГІГЁГЇГ» Г¤Г«Гї ГЇГ®ГЇГіГ«ГїГ°Г­Г»Гµ Г±ГҐГ°ГўГҐГ°Г®Гў\nГЌГ  Г¤Г Г­Г­Г»Г© Г¬Г®Г¬ГҐГ­ГІ Г­Г Г°ГЁГ±Г®ГўГ Г­Г» Г«Г®ГЈГ®ГІГЁГЇГ» Г¤Г«Гї ГІГ ГЄГЁГµ Г±ГҐГ°ГўГҐГ°Г®Гў, ГЄГ ГЄ\n\n\t{ffffff}> {CC8C51}Arizona \n\t\t{549f68}Phoenix\n\t\tSaint-Rose\n\n{FFFFFF}Г‚ Г®ГЎГ­Г®ГўГ«ГҐГ­ГЁГЁ ГЎГіГ¤ГіГІ {CC8C51}Г¤Г®ГЎГ ГўГ«ГҐГ­Г»{FFFFFF} Г«Г®ГЈГ®ГІГЁГЇГ» Г¤Г«Гї ГЅГІГЁГµ Г±ГҐГ°ГўГҐГ°Г®Гў\n\t{ffffff}> {CC8C51}Arizona{83ebe7}\n\t\tTucson\n\t\tScottdale\n\t\tChandler\n\t\tBrainburg\n\t\tMesa\n\t\tRed-Rock\n\t\tYuma\n\t\tSurprice\n\t\tPrescott\n\t\tGlendale\n\t\tKingman\n\n\t{ffffff}> {CC8C51}Diamond\n\t\t{932051}Emerald\n\t\t{932051}Crystal\n\t\t{932051}Amber\n\t\t{932051}Gold\n\t\t{932051}Trilliant\n\t\t{932051}Sapphire\n\t\t{932051}Ruby","Г‡Г ГЄГ°Г»ГІГј")
 end
 
 function autoupdate(json_url, prefix, url)
   local dlstatus = require('moonloader').download_status
-	local preifx = '{CC8C51}[Custom Logos] {d5dedd}'
+	local prefix = '{CC8C51}[Custom Logos] {d5dedd}'
   local json = getWorkingDirectory() .. '\\'..thisScript().name..'-version.json'
   if doesFileExist(json) then os.remove(json) end
   downloadUrlToFile(json_url, json,
@@ -160,21 +160,21 @@ function autoupdate(json_url, prefix, url)
               lua_thread.create(function(prefix)
                 local dlstatus = require('moonloader').download_status
                 local color = -1
-                sampAddChatMessage((prefix..'Обнаружено обновление. Текущая версия:{629eee} '..thisScript().version..' {CC8C51}|{d5dedd} Новая версия:{629eee} '..updateversion), color)
+                sampAddChatMessage((prefix..'ГЋГЎГ­Г Г°ГіГ¦ГҐГ­Г® Г®ГЎГ­Г®ГўГ«ГҐГ­ГЁГҐ. Г’ГҐГЄГіГ№Г Гї ГўГҐГ°Г±ГЁГї:{629eee} '..thisScript().version..' {CC8C51}|{d5dedd} ГЌГ®ГўГ Гї ГўГҐГ°Г±ГЁГї:{629eee} '..updateversion), color)
                 wait(250)
                 downloadUrlToFile(updatelink, thisScript().path,
                   function(id3, status1, p13, p23)
                     if status1 == dlstatus.STATUS_DOWNLOADINGDATA then
-                      print(string.format('Загружено %d из %d.', p13, p23))
+                      print(string.format('Г‡Г ГЈГ°ГіГ¦ГҐГ­Г® %d ГЁГ§ %d.', p13, p23))
                     elseif status1 == dlstatus.STATUS_ENDDOWNLOADDATA then
-                      print('Загрузка обновления завершена.')
-                      sampAddChatMessage((prefix..'Обновление завершено!'), color)
+                      print('Г‡Г ГЈГ°ГіГ§ГЄГ  Г®ГЎГ­Г®ГўГ«ГҐГ­ГЁГї Г§Г ГўГҐГ°ГёГҐГ­Г .')
+                      sampAddChatMessage((prefix..'ГЋГЎГ­Г®ГўГ«ГҐГ­ГЁГҐ Г§Г ГўГҐГ°ГёГҐГ­Г®!'), color)
                       goupdatestatus = true
                       lua_thread.create(function() wait(500) thisScript():reload() end)
                     end
                     if status1 == dlstatus.STATUSEX_ENDDOWNLOAD then
                       if goupdatestatus == nil then
-                        sampAddChatMessage((prefix..'Обновление прошло неудачно. Запускаю устаревшую версию..'), color)
+                        sampAddChatMessage((prefix..'ГЋГЎГ­Г®ГўГ«ГҐГ­ГЁГҐ ГЇГ°Г®ГёГ«Г® Г­ГҐГіГ¤Г Г·Г­Г®. Г‡Г ГЇГіГ±ГЄГ Гѕ ГіГ±ГІГ Г°ГҐГўГёГіГѕ ГўГҐГ°Г±ГЁГѕ..'), color)
                         update = false
                       end
                     end
@@ -184,11 +184,11 @@ function autoupdate(json_url, prefix, url)
               )
             else
               update = false
-              print('v'..thisScript().version..': Обновление не требуется.')
+              print('v'..thisScript().version..': ГЋГЎГ­Г®ГўГ«ГҐГ­ГЁГҐ Г­ГҐ ГІГ°ГҐГЎГіГҐГІГ±Гї.')
             end
           end
         else
-          print('v'..thisScript().version..': Не могу проверить обновление. Попробуйте позже или проверьте наличие на '..url)
+          print('v'..thisScript().version..': ГЌГҐ Г¬Г®ГЈГі ГЇГ°Г®ГўГҐГ°ГЁГІГј Г®ГЎГ­Г®ГўГ«ГҐГ­ГЁГҐ. ГЏГ®ГЇГ°Г®ГЎГіГ©ГІГҐ ГЇГ®Г§Г¦ГҐ ГЁГ«ГЁ ГЇГ°Г®ГўГҐГ°ГјГІГҐ Г­Г Г«ГЁГ·ГЁГҐ Г­Г  '..url)
           update = false
         end
       end
