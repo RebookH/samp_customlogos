@@ -43,25 +43,25 @@ function main()
 							sampTextdrawDelete(536)
 							sampTextdrawDelete(537)
 							sampTextdrawDelete(538)
-							renderDrawTexture(logo2, posX, posY, 280, 85, 0, 0xFFFFFFFF)
+							renderDrawTexture(logo2, posX, posY, 360, 105, 0, 0xFFFFFFFF)
 						end
 						if ipserv == '185.169.134.43:7777' then
 							sampTextdrawDelete(536)
 							sampTextdrawDelete(537)
 							sampTextdrawDelete(538)
-							renderDrawTexture(logo3, posX, posY, 280, 85, 0, 0xFFFFFFFF)
+							renderDrawTexture(logo3, posX, posY, 360, 105, 0, 0xFFFFFFFF)
 						end
 						if ipserv == '185.169.134.44:7777' then
 							sampTextdrawDelete(536)
 							sampTextdrawDelete(537)
 							sampTextdrawDelete(538)
-							renderDrawTexture(logo4, posX, posY, 280, 85, 0, 0xFFFFFFFF)
+							renderDrawTexture(logo4, posX, posY, 360, 105, 0, 0xFFFFFFFF)
 						end
 						if ipserv == '185.169.134.45:7777' then
 							sampTextdrawDelete(536)
 							sampTextdrawDelete(537)
 							sampTextdrawDelete(538)
-							renderDrawTexture(logo5, posX, posY, 280, 85, 0, 0xFFFFFFFF)
+							renderDrawTexture(logo5, posX, posY, 360, 105, 0, 0xFFFFFFFF)
 						end
 						if ipserv == '185.169.134.5:7777' then
 							sampTextdrawDelete(536)
@@ -80,13 +80,13 @@ function main()
 							sampTextdrawDelete(549)
 							sampTextdrawDelete(550)
 							sampTextdrawDelete(551)
-							renderDrawTexture(logo6, posX, posY, 280, 85, 0, 0xFFFFFFFF)
+							renderDrawTexture(logo6, posX, posY, 360, 105, 0, 0xFFFFFFFF)
 						end
 						if ipserv == '185.169.134.59:7777' then
 							sampTextdrawDelete(536)
 							sampTextdrawDelete(537)
 							sampTextdrawDelete(538)
-							renderDrawTexture(logo7, posX, posY, 280, 85, 0, 0xFFFFFFFF)
+							renderDrawTexture(logo7, posX, posY, 360, 105, 0, 0xFFFFFFFF)
 						end
 						if ipserv == '185.169.134.61:7777' then
 							sampTextdrawDelete(536)
@@ -103,37 +103,37 @@ function main()
 							sampTextdrawDelete(547)
 							sampTextdrawDelete(548)
 							sampTextdrawDelete(549)
-							renderDrawTexture(logo8, posX, posY, 280, 85, 0, 0xFFFFFFFF)
+							renderDrawTexture(logo8, posX, posY, 360, 105, 0, 0xFFFFFFFF)
 						end
 						if ipserv == '185.169.134.107:7777' then
 							sampTextdrawDelete(536)
 							sampTextdrawDelete(537)
 							sampTextdrawDelete(538)
-							renderDrawTexture(logo9, posX, posY, 280, 85, 0, 0xFFFFFFFF)
+							renderDrawTexture(logo9, posX, posY, 360, 105, 0, 0xFFFFFFFF)
 						end
 						if ipserv == '185.169.134.109:7777' then
 							sampTextdrawDelete(536)
 							sampTextdrawDelete(537)
 							sampTextdrawDelete(538)
-							renderDrawTexture(logo10, posX, posY, 280, 85, 0, 0xFFFFFFFF)
+							renderDrawTexture(logo10, posX, posY, 360, 105, 0, 0xFFFFFFFF)
 						end
 						if ipserv == '185.169.134.166:7777' then
 							sampTextdrawDelete(536)
 							sampTextdrawDelete(537)
 							sampTextdrawDelete(538)
-							renderDrawTexture(logo11, posX, posY, 280, 85, 0, 0xFFFFFFFF)
+							renderDrawTexture(logo11, posX, posY, 360, 105, 0, 0xFFFFFFFF)
 						end
 						if ipserv == '185.169.134.171:7777' then
 							sampTextdrawDelete(536)
 							sampTextdrawDelete(537)
 							sampTextdrawDelete(538)
-							renderDrawTexture(logo12, posX, posY, 280, 85, 0, 0xFFFFFFFF)
+							renderDrawTexture(logo12, posX, posY, 360, 105, 0, 0xFFFFFFFF)
 						end
 						if ipserv == '185.169.134.172:7777' then
 							sampTextdrawDelete(536)
 							sampTextdrawDelete(537)
 							sampTextdrawDelete(538)
-							renderDrawTexture(logo13, posX, posY, 280, 85, 0, 0xFFFFFFFF)
+							renderDrawTexture(logo13, posX, posY, 360, 105, 0, 0xFFFFFFFF)
 						end
 					end
 			end
